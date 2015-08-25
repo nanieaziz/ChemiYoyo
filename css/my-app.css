@@ -1,0 +1,8 @@
+.btn-margin .button {
+	margin: 10px 0;
+}
+img.image {
+	max-width: 100%;
+	margin:10px auto;
+	display: block;
+}
