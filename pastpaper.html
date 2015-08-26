@@ -4,7 +4,7 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center sliding">Chapter 2</div>
+    <div class="center sliding">Periodic Table</div>
     <div class="right">
       <!-- Right link contains only icon - additional "icon-only" class-->
       <!-- <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a> -->
@@ -16,14 +16,24 @@
   <div data-page="about" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="content-block">
-        <div class="content-block-inner">
-
-            <!-- FILL CONTENT HERE -->
-            <!-- <img src="chapter/img/ch1-1.gif" class="image"> -->
-            <!-- END CONTENT HERE -->
-        </div>
-      </div>
+      <!-- Slider -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><span>Slide 1</span></div>
+      <div class="swiper-slide"><span>Slide 2</span></div>
+      <div class="swiper-slide"><span>Slide 3</span></div>
+      <div class="swiper-slide"><span>Slide 4</span></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
     </div>
   </div>
 </div>
+<script>
+var myApp = new Framework7(); 
+ 
+  // Init slider and store its instance in mySwiper variable
+  var mySwiper = myApp.swiper('.swiper-container', {
+    pagination:'.swiper-pagination'
+  });
+</script>
