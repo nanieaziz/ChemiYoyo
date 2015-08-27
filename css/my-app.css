@@ -19,3 +19,45 @@ img.image {
   margin:20px;
   font-size:21px;
 }
+/* home */
+.bg0 {
+  background-image: url('../img/bg0.jpg');
+  background-size: cover;
+}
+/* learn */
+.bg1 {
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+}
+/* menu */
+.bg2 {
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+}
+.bg3 {
+  background-image: url('../img/bg3.jpg');
+  background-size: cover;
+}
+/* summary */
+.bg4 {
+  background-image: url('../img/bg4.jpg');
+  background-size: cover;
+}
+/* about */
+.bg5 {
+  background-image: url('../img/bg5.jpg');
+  background-size: cover;
+}
+/* formula  */
+.bg6 {
+  background-image: url('../img/bg6.jpg');
+  background-size: cover;
+}
+.bg7 {
+  background-image: url('../img/bg7.jpg');
+  background-size: cover;
+}
+.bg8 {
+  background-image: url('../img/bg8.jpg');
+  background-size: cover;
+}
