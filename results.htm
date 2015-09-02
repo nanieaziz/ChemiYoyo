@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>E-Chemi Yoyo - quiz result </title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center"></div>
+            <div class="left">
+              <!-- Right link contains only icon - additional "icon-only" class-->
+              <a href="index.html" class="back link icon-only open-panel"> Back</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page bg0">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              
+              <div class="content-block">
+                
+                <div class="content-block-inner">
+
+
+
+<script src="js/quizconfig.js">
+</script>
+
+<h2>Quiz Results</h2>
+
+
+
+<table width="100%">
+  <tr>
+    <td ><form method="POST" name="result">
+      <table width="100%">
+        <tr>
+          <td># of questions you got right:</td>
+          <td class="item-input"><input type="text" name="p"></td>
+        </tr>
+        <tr>
+          <td>The questions you got wrong:</td>
+          <td class="item-input"><p><textarea name="T2" rows="3" cols="24" wrap="virtual"></textarea></td>
+        </tr>
+        <tr>
+          <td>Grade in percentage:</td>
+          <td class="item-input"><input type="text" name="q"></td>
+        </tr>
+      </table>
+    </form>
+    </td>
+  </tr>
+</table>
+
+
+<form method="POST">
+
+<script>
+var wrong=0
+for (e=0;e<=2;e++)
+document.result[e].value=""
+
+var results=document.cookie.split(";")
+for (n=0;n<=results.length-1;n++){
+if (results[n].charAt(1)=='q')
+parse=n
+
+}
+
+var incorrect=results[parse].split("=")
+incorrect=incorrect[1].split("/")
+if (incorrect[incorrect.length-1]=='b')
+incorrect=""
+document.result[0].value=totalquestions-incorrect.length+" out of "+totalquestions
+document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
+for (temp=0;temp<incorrect.length;temp++)
+document.result[1].value+=incorrect[temp]+", "
+
+
+</script>
+<!-- 
+<input type="button" value="Take the quiz again" name="B1"
+  onClick="history.go(-1)"> 
+  <input type="button" value="View solution" name="B2"
+  onClick="showsolution()"> -->
+
+</form>
+
+<!-- <p id="footnote" align="center"><font face="arial" size="-1">Quiz script provided by<br>
+<a href="http://www.javascriptkit.com">JavaScriptKit.com</a></font></p> -->
+</div>
+              </div>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</body>
+</html>
