@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title></title>
+        <style type="text/css">
+            fieldset {
+                width: 30%;
+                border: 1px solid green;
+            }
+            fieldset label {
+                display: block;
+            }
+        </style>
+        <script type="text/javascript">
+            var questions = [
+                ['What colour is the sun?','1','Yellow','Green','Blue'],
+                ['What is 2 x 3?','2',5,6,7,8]
+            ];
+            function checkAnswers(){
+                var numCorrectAnswers = 0;
+                for(var i=0; i < questions.length; i++){
+                    var radBtnsO = document.getElementsByName('q'+(i+1));
+                    disableRadButtons(radBtnsO);
+                    if(getAnswer(radBtnsO) == questions[i][1]){++numCorrectAnswers;}
+                }
+                alert('Total correct answers = '+numCorrectAnswers);
+            }
+            function getAnswer(radBtnsO){
+                for(var i=0; i < radBtnsO.length; i++){
+                    if(radBtnsO[i].checked){return radBtnsO[i].value;}
+                }
+                return false;
+            }
+            function disableRadButtons(radBtnsO){
+                for(var i=0; i < radBtnsO.length; i++){
+                    radBtnsO[i].disabled = true;
+                }
+            }
+            window.onload=function(){
+                fldQuestionsO = document.getElementById('fldQuestions');
+                for(i=0; i < questions.length; i++){
+                    var newDiv = document.createElement('div');
+                    var newPara = document.createElement('p');
+                    newPara.appendChild(document.createTextNode('Q'+(i+1)+' '+questions[i][0]));
+                    newDiv.appendChild(newPara);
+                    //create the radio buttons for each question
+                    var radValue = 1;
+                    for(j=2; j < questions[i].length; j++) {
+                        var newLabel = document.createElement('label');
+                        var newRadBtn = document.createElement('input');
+                        newRadBtn.setAttribute('type', 'radio');
+                        newRadBtn.setAttribute('name', 'q'+(i+1));
+                        newRadBtn.setAttribute('value', radValue++);
+                        newLabel.appendChild(newRadBtn);
+                        newLabel.appendChild(document.createTextNode(questions[i][j]));
+                        newDiv.appendChild(newLabel);
+                    }
+                    fldQuestionsO.appendChild(newDiv);
+                }
+                document.getElementById('btnSubmit').onclick=checkAnswers;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <fieldset id="fldQuestions"></fieldset>
+            <button id="btnSubmit">Submit</button>
+        </div>
+    </body>
+</html>

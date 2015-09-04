@@ -13,67 +13,55 @@
 </div>
 <div class="pages">
   <!-- Page, data-page contains page name-->
-  <div data-page="about" class="page">
+  <div data-page="quiz" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
       <div class="content-block">
         <div class="content-block-inner">
 
           <!-- FILL CONTENT HERE -->
-           Quiz with instant validation
-          <p align="center">
+          <form name="myForm">
+<div id="page">
+  <h3 id="h">Quiz Time!</h3>
+  
+  <div id="q">
+    <div class="quizQ">
+    <h4>1) During a cleaning process, soap act as?</h4> 
+      <input type="radio" rel="0" value="a" name="grp0"/>a) Emulsifying agent<br /> <!--Correct Answer: A-->
+      <input type="radio" rel="0" value="b" name="grp0"/>b) Oxidising agent<br />
+      <input type="radio" rel="0" value="c" name="grp0"/>c) Cleaning agent<br />
+      <input type="radio" rel="0" value="d" name="grp0"/>d) Oil breaking agent<br />
 
-          <form method="POST" name="myquiz">
+    </div>
 
-            <font face="Arial"><big><big>General Knowledge Quiz</big></big></font></p>
 
-          <div class="qheader">
-            1) During a cleaning process, soap act as?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question1">a) Emulsifying agent<br>
-            <input type="radio" value="b" name="question1">b) Oxidising agent<br>
-            <input type="radio" value="c" name="question1">c) Cleaning agent<br>
-            <input type="radio" value="d" name="question1">d) Oil breaking agent<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4> 2) In the process of making soap, which of the following chemical is added into the product to reduce the solubility of the soap solution?</h4>  
+      <input type="radio" rel="1" value="a" name="grp1"/>a) Ammonium chloride<br />
+      <input type="radio" rel="1" value="b" name="grp1"/>b) Sodium chloride<br /> <!--Correct Answer: B-->
+      <input type="radio" rel="1" value="c" name="grp1"/>c) Potassium chloride<br />
+      <input type="radio" rel="1" value="d" name="grp1"/>d) Zinc chloride<br />
+    </div>
 
-          <br>
 
-          <div class="qheader">
-            2) In the process of making soap, which of the following chemical is added into the product to reduce the solubility of the soap solution?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question2">a) Ammonium chloride<br>
-            <input type="radio" value="b" name="question2">b) Sodium chloride<br>
-            <input type="radio" value="c" name="question2">c) Potassium chloride<br>
-            <input type="radio" value="d" name="question2">d) Zinc chloride<br>
-          </div>
-          </p>
-
-          <br>
-
-          <div class="qheader">
-            3) Which is the following are used in the manufacturing of soaps?<br>
-              <ol type="i">
+    <div class="quizQ">
+    <h4>3) Which is the following are used in the manufacturing of soaps?<br></h4>
+      <ol type="i">
                 <li>Sodium hydoxide</li>
                 <li>Sodium chloride</li>
                 <li>Sodium sulphate</li>
                 <li>Sodium bicarbonate</li>
-              </ol>
-          </div>
-          <div class="qselections">
-            <input type="radio" value="a" name="question3">a) i and iv only<br>
-            <input type="radio" value="b" name="question3">b) i and ii only<br>
-            <input type="radio" value="c" name="question3">c) iii and iv only<br>
-            <input type="radio" value="d" name="question3">d) ii and iv only<br>
-          </div>
+            </ol>
 
-          <br>
+      <input type="radio" rel="2" value="a" name="grp2"/>a) i and iv only<br/>
+      <input type="radio" rel="2" value="b" name="grp2"/>b) i and ii only<br/>
+      <input type="radio" rel="2" value="c" name="grp2"/>c) iii and iv only<br/> <!--Correct Answer: C-->
+      <input type="radio" rel="2" value="d" name="grp2"/>d) ii and iv only<br/>
+    </div>
 
-          <div class="qheader">
-            <p>4) Which of the following pairs is true about the additives in detergents and their function?</p>
-            <table border="1">
+    <div class="quizQ">
+    <h4>4) Which of the following pairs is true about the additives in detergents and their function?<br></h4> 
+      <table border="1">
               <tr>
                 <th></th>
                 <th>Additive</th>
@@ -99,262 +87,186 @@
                 <td>Stabilisers </td>    
                 <td>To prevent the formation of foam</td>
               </tr>
-              </table>
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question4">a) i and ii only<br>
-            <input type="radio" value="b" name="question4">b) i and iv only<br>
-            <input type="radio" value="c" name="question4">c) i,iii and iv only<br>
-            <input type="radio" value="d" name="question4">d) i,ii,iii and iv<br>
-          </div>
-          </p>
+              </table><br>
 
-          <br>
+      <input type="radio" rel="3" value="a" name="grp3"/>a) i and ii only<br />
+      <input type="radio" rel="3" value="b" name="grp3"/>b) i and iv only<br /> <!--Correct Answer: B-->
+      <input type="radio" rel="3" value="c" name="grp3"/>c) i,iii and iv only<br />
+      <input type="radio" rel="3" value="d" name="grp3"/>d) i,ii,iii and iv<br />
+    </div>
 
-          <div class="qheader">
-            5) Detergent is more effective in hard water compared to soap because detergent?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question5">a) Has hydrophilic part which is more soluble in water<br>
-            <input type="radio" value="b" name="question5">b) Has hydrophobic part which is more soluble in oil and grease<br>
-            <input type="radio" value="c" name="question5">c) Has smaller molecules which is more soluble in water<br>
-            <input type="radio" value="d" name="question5">d) Forms a soluble salt wit metal ion in hard water<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>5) Detergent is more effective in hard water compared to soap because detergent?</h4> 
+      <input type="radio" rel="4" value="a" name="grp4"/>a) Has hydrophilic part which is more soluble in water<br />
+      <input type="radio" rel="4" value="b" name="grp4"/>b) Has hydrophobic part which is more soluble in oil and grease<br />
+      <input type="radio" rel="4" value="c" name="grp4"/>c) Has smaller molecules which is more soluble in water<br />
+      <input type="radio" rel="4" value="d" name="grp4"/>d) Forms a soluble salt wit metal ion in hard water<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            6) Which of the following take place when water solidifies to become ice?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question6">a) Water molecules get nearer to each other<br>
-            <input type="radio" value="b" name="question6">b) Water molecules are not arranged orderly<br>
-            <input type="radio" value="c" name="question6">c) The mass  increase<br>
-            <input type="radio" value="d" name="question6">d) Energy is absorbed from the surrounding<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>6) Which of the following take place when water solidifies to become ice?</h4> 
+      <input type="radio" rel="5" value="a" name="grp5"/>a) Water molecules get nearer to each other<br />
+      <input type="radio" rel="5" value="b" name="grp5"/>b) Water molecules are not arranged orderly<br />
+      <input type="radio" rel="5" value="c" name="grp5"/>c) The mass  increase<br />
+      <input type="radio" rel="5" value="d" name="grp5"/>d) Energy is absorbed from the surrounding<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            7) In an atom , the number of electrons is equal to the </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question7">a) Number of neutron<br>
-            <input type="radio" value="b" name="question7">b) Proton number<br>
-            <input type="radio" value="c" name="question7">c) Nucleon number<br>
-            <input type="radio" value="d" name="question7">d) Sum of the charge<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>7) In an atom , the number of electrons is equal to the </h4> 
+      <input type="radio" rel="6" value="a" name="grp6"/>a) Number of neutron<br />
+      <input type="radio" rel="6" value="b" name="grp6"/>b) Proton number<br />
+      <input type="radio" rel="6" value="c" name="grp6"/>c) Nucleon number<br />
+      <input type="radio" rel="6" value="d" name="grp6"/>d) Sum of the charge<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            8) Which of the followings is the formula of calcium hydroxide ion?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question8">a) Ca2OH<br>
-            <input type="radio" value="b" name="question8">b) Ca(OH)2<br>
-            <input type="radio" value="c" name="question8">c) CAOH<br>
-            <input type="radio" value="d" name="question8">d) CAOH2<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>8) Which of the followings is the formula of calcium hydroxide ion?</h4> 
+      <input type="radio" rel="7" value="a" name="grp7"/>a) Ca2OH<br />
+      <input type="radio" rel="7" value="b" name="grp7"/>b) Ca(OH)2<br />
+      <input type="radio" rel="7" value="c" name="grp7"/>c) CAOH<br />
+      <input type="radio" rel="7" value="d" name="grp7"/>d) CAOH2<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            9) The mass of an atom of element A is twice of the mass of an atom of carbon. Therefore, its relative atomic mass is ___ . [Relative Atomic Mass of Carbon = 12] </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question9">a) 12<br>
-            <input type="radio" value="b" name="question9">b) 6<br>
-            <input type="radio" value="c" name="question9">c) 24<br>
-            <input type="radio" value="d" name="question9">d) 18<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>9) The mass of an atom of element A is twice of the mass of an atom of carbon. Therefore, its relative atomic mass is ___ . [Relative Atomic Mass of Carbon = 12] </h4> 
+      <input type="radio" rel="8" value="a" name="grp8"/>a) 12<br />
+      <input type="radio" rel="8" value="b" name="grp8"/>b) 6<br />
+      <input type="radio" rel="8" value="c" name="grp8"/>c) 24<br />
+      <input type="radio" rel="8" value="d" name="grp8"/>d) 18<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            10) The maximum number of electrons can be filled into the second shell of an atom is __.</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question10">a) 8<br>
-            <input type="radio" value="b" name="question10">b) 6<br>
-            <input type="radio" value="c" name="question10">c) 2<br>
-            <input type="radio" value="d" name="question10">d) 4<br>
-            <input type="radio" value="e" name="question10">e) 18<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>10) The maximum number of electrons can be filled into the second shell of an atom is __.</h4> 
+      <input type="radio" rel="9" value="a" name="grp9"/>a) 8<br />
+      <input type="radio" rel="9" value="b" name="grp9"/>b) 6<br />
+      <input type="radio" rel="9" value="c" name="grp9"/>c) 2<br />
+      <input type="radio" rel="9" value="d" name="grp9"/>d) 4<br />
+      <input type="radio" rel="9" value="e" name="grp9"/>e) 18<br />
 
-          <br>
+    </div>
+    
+    <div class="quizQ">
+    <h4>11) What is the relative molecular mass of Carbon Hydroxide (Ca(OH)2)? (Ar: O = 16, H = 1 ; Ca = 40)</h4> 
+      <input type="radio" rel="10" value="a" name="grp10"/>a) 54<br />
+      <input type="radio" rel="10" value="b" name="grp10"/>b) 74<br />
+      <input type="radio" rel="10" value="c" name="grp10"/>c) 57<br />
+      <input type="radio" rel="10" value="d" name="grp10"/>d) 58<br />
 
-          <div class="qheader">
-            11) What is the relative molecular mass of Carbon Hydroxide (Ca(OH)2)? (Ar: O = 16, H = 1 ; Ca = 40)</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question11">a) 54<br>
-            <input type="radio" value="b" name="question11">b) 74<br>
-            <input type="radio" value="c" name="question11">c) 57<br>
-            <input type="radio" value="d" name="question11">d) 58<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
+    <div class="quizQ">
+    <h4>12) The noble gases exist as monoatomic gases in nature because?</h4> 
+      <input type="radio" rel="11" value="a" name="grp11"/>a) They are insoluble in water<br />
+      <input type="radio" rel="11" value="b" name="grp11"/>b) They have valence electrons with very low energy<br />
+      <input type="radio" rel="11" value="c" name="grp11"/>c) They have 2 or 8 electrons which is very stable<br />
+      <input type="radio" rel="11" value="d" name="grp11"/>d) They have duplet or octet electrons arrangement which is very stable<br />
 
-          <div class="qheader">
-            12) The noble gases exist as monoatomic gases in nature because?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question12">a) They are insoluble in water<br>
-            <input type="radio" value="b" name="question12">b) They have valence electrons with very low energy <br>
-            <input type="radio" value="c" name="question12">c) They have 2 or 8 electrons which is very stable<br>
-            <input type="radio" value="d" name="question12">d) They have duplet or octet electrons arrangement which is very stable<br>
-          </div>
-          </p>
+    </div>
 
-           <br>
+    <div class="quizQ">
+    <h4>13) P, Q and R are 3 consecutive elements in periodic table. If R is a noble gas, what will be the charge of ion P?</h4> 
+      <input type="radio" rel="12" value="a" name="grp12"/>a) -2<br />
+      <input type="radio" rel="12" value="b" name="grp12"/>b) +1<br />
+      <input type="radio" rel="12" value="c" name="grp12"/>c) +2<br />
+      <input type="radio" rel="12" value="d" name="grp12"/>d) 0<br />
+      <input type="radio" rel="12" value="e" name="grp12"/>d) -1<br />
 
-          <div class="qheader">
-            13) P, Q and R are 3 consecutive elements in periodic table. If R is a noble gas, what will be the charge of ion P?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question13">a) -2<br>
-            <input type="radio" value="b" name="question13">b) +1 <br>
-            <input type="radio" value="c" name="question13">c) +2<br>
-            <input type="radio" value="d" name="question13">d) 0<br>
-            <input type="radio" value="e" name="question13">e) -1<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
+    <div class="quizQ">
+    <h4>14) Elements in Periodic Table are arranged according to the increase in their</h4> 
+      <input type="radio" rel="13" value="a" name="grp13"/>a) nucleon number<br />
+      <input type="radio" rel="13" value="b" name="grp13"/>b) proton number<br />
+      <input type="radio" rel="13" value="c" name="grp13"/>c) number of neutrons<br />
+      <input type="radio" rel="13" value="d" name="grp13"/>d) relative atomic mass<br />
 
-          <div class="qheader">
-            14) Elements in Periodic Table are arranged according to the increase in their</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question14">a) nucleon number<br>
-            <input type="radio" value="b" name="question14">b) proton number <br>
-            <input type="radio" value="c" name="question14">c) number of neutrons<br>
-            <input type="radio" value="d" name="question14">d) relative atomic mass<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
+    <div class="quizQ">
+    <h4>15) Which of the following is TRUE about the metal oxide formed between group 1 Metal and oxygen?</h4> 
+      <input type="radio" rel="14" value="a" name="grp14"/>a) It has a low boiling point.<br />
+      <input type="radio" rel="14" value="b" name="grp14"/>b) It can conduct electricity when in solid state.<br />
+      <input type="radio" rel="14" value="c" name="grp14"/>c) It is solid of different colour.<br />
+      <input type="radio" rel="14" value="d" name="grp14"/>d) It is soluble in waterq<br />
 
-          <div class="qheader">
-            15) Which of the following is TRUE about the metal oxide formed between group 1 Metal and oxygen?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question15">a) It has a low boiling point.<br>
-            <input type="radio" value="b" name="question15">b) It can conduct electricity when in solid state.<br>
-            <input type="radio" value="c" name="question15">c) It is solid of different colour.<br>
-            <input type="radio" value="d" name="question15">d) It is soluble in waterq<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
+    <div class="quizQ">
+    <h4>16) Which of the following acids contains greatest number of hydrogen ions?</h4> 
+      <input type="radio" rel="15" value="a" name="grp15"/>a) 100 cm³ of 1 mol/dm³ phosphoric acid<br />
+      <input type="radio" rel="15" value="b" name="grp15"/>b) 200 cm³ of 1 mol/dm³ hydrochloric acid<br />
+      <input type="radio" rel="15" value="c" name="grp15"/>c) 150 cm³ of 1 mol/dm³ sulphuric acid<br />
+      <input type="radio" rel="15" value="d" name="grp15"/>d) 300 cm³ of 1 mol/dm³ etahnoic acid<br />
 
-          <div class="qheader">
-            16) Which of the following acids contains greatest number of hydrogen ions?</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question16">a) 100 cm³ of 1 mol/dm³ phosphoric acid<br>
-            <input type="radio" value="b" name="question16">b) 200 cm³ of 1 mol/dm³ hydrochloric acid<br>
-            <input type="radio" value="c" name="question16">c) 150 cm³ of 1 mol/dm³ sulphuric acid<br>
-            <input type="radio" value="d" name="question16">d) 300 cm³ of 1 mol/dm³ etahnoic acid<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
+    <div class="quizQ">
+    <h4>17) A salt always</h4> 
+      <input type="radio" rel="16" value="a" name="grp16"/>a) conducts electricity<br />
+      <input type="radio" rel="16" value="b" name="grp16"/>b) dissolves in water<br />
+      <input type="radio" rel="16" value="c" name="grp16"/>c) contain positive and negative ions<br />
+      <input type="radio" rel="16" value="d" name="grp16"/>d) has salty taste<br />
 
-          <div class="qheader">
-            17) A salt always</div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question17">a) conducts electricity<br>
-            <input type="radio" value="b" name="question17">b) dissolves in water<br>
-            <input type="radio" value="c" name="question17">c) contain positive and negative ions<br>
-            <input type="radio" value="d" name="question17">d) has salty taste<br>
-          </div>
-          </p>
+    </div>
 
-          <br>
-
-          <div class="qheader">
-            18) Which of the following substances are salts?<br>
-            <ol type="i">
+    <div class="quizQ">
+    <h4>18) Which of the following substances are salts?<br></h4> 
+      <ol type="i">
               <li>Calcium hydroxide</li>
               <li>alcohol</li>
               <li>Magnesium oxide</li>
               <li>Silver(I) nitrate</li>
               <li>Copper(II) sulphate</li>
             </ol>
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question18">a) i and ii only<br>
-            <input type="radio" value="b" name="question18">b) ii and iv only<br>
-            <input type="radio" value="c" name="question18">c) i, iii and v only<br>
-            <input type="radio" value="d" name="question18">d) iv and v only<br>
-          </div>
-          </p>
+      <input type="radio" rel="17" value="a" name="grp17"/>a) i and ii only<br />
+      <input type="radio" rel="17" value="b" name="grp17"/>b) ii and iv only<br />
+      <input type="radio" rel="17" value="c" name="grp17"/>c) i, iii and v only<br />
+      <input type="radio" rel="17" value="d" name="grp17"/>d) iv and v only<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            19) Sulphuric acid is manufactured in industry through a processed called
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question19">a) Haber Process<br>
-            <input type="radio" value="b" name="question19">b) Acid making process<br>
-            <input type="radio" value="c" name="question19">c) Contact Process<br>
-            <input type="radio" value="d" name="question19">d) Ostwald Process<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>19) Sulphuric acid is manufactured in industry through a processed called</h4> 
+      <input type="radio" rel="18" value="a" name="grp18"/>a) Haber Process<br />
+      <input type="radio" rel="18" value="b" name="grp18"/>b) Acid making process<br />
+      <input type="radio" rel="18" value="c" name="grp18"/>c) Contact Process<br />
+      <input type="radio" rel="18" value="d" name="grp18"/>d) Ostwald Process<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            20) Which of the following statements are true about hydrocarbon?<br>
-            <ol type = "i">
+    <div class="quizQ">
+    <h4>20) Which of the following statements are true about hydrocarbon?<br></h4>
+      <ol type = "i">
               <li>Combustion of hydrocarbon with sufficient oxygen produces carbon dioxide and water.</li>
               <li>Hydrocarbons contain only oxygen and hydrogen in the molecule.</li>
               <li>Some hydrocarbons dissolve in water.</li>
               <li>Hydrocarbon that burns with more soot contains a higher percentage of carbon.</li>
               <li>The more carbon atoms in a molecule of a hydrocarbon, the lower the boiling point of the hydrocarbon.</li>
-            </ol>
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question20">a) i and iii only<br>
-            <input type="radio" value="b" name="question20">b) i,ii and iii only<br>
-            <input type="radio" value="c" name="question20">c) i,ii and iv only<br>
-            <input type="radio" value="d" name="question20">d) i,ii,iii,iv and v<br>
-          </div>
-          </p>
+            </ol> 
+      <input type="radio" rel="19" value="a" name="grp19"/>a) i and iii only<br />
+      <input type="radio" rel="19" value="b" name="grp19"/>b) i,ii and iii only<br />
+      <input type="radio" rel="19" value="c" name="grp19"/>c) i,ii and iv only<br />
+      <input type="radio" rel="19" value="d" name="grp19"/>d) i,ii,iii,iv and v<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            21) The amount of soot produced during combustion of a hydrocarbon depends on 
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question21">a) The types of hydrocarbon<br>
-            <input type="radio" value="b" name="question21">b) The number of carbon atoms in the molecule of the hydrocarbon<br>
-            <input type="radio" value="c" name="question21">c) The mass percentage of carbon in the hydrocarbon<br>
-            <input type="radio" value="d" name="question21">d) The density of the hydrocarbon<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>21) The amount of soot produced during combustion of a hydrocarbon depends on</h4>
+      <input type="radio" rel="20" value="a" name="grp20"/>a) The types of hydrocarbon<br />
+      <input type="radio" rel="20" value="b" name="grp20"/>b) The number of carbon atoms in the molecule of the hydrocarbon<br />
+      <input type="radio" rel="20" value="c" name="grp20"/>c) The mass percentage of carbon in the hydrocarbon<br />
+      <input type="radio" rel="20" value="d" name="grp20"/>d) The density of the hydrocarbon<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            22) <center><table border="1">
+    <div class="quizQ">
+
+    <h4>22)</h4> <center><table border="1">
                 <tr>
                   <th>Substances</th>
                   <th>Observation</th>
@@ -372,73 +284,63 @@
                   <td>No change</td>
                 </tr>
                 </table> </center>
-          <p>The table shows the observations of an experiment involving heating of two substances. Which of the following is correct about the reactivity of the elements towards oxygen in ascending order?</p>
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question22">a) Hydrogen, P, carbon, Q<br>
-            <input type="radio" value="b" name="question22">b) P, carbon, Q, hydrogen<br>
-            <input type="radio" value="c" name="question22">c) Carbon, P, hydrogen, Q<br>
-            <input type="radio" value="d" name="question22">d) Q, carbon, P, hydrogen<br>
-          </div>
-          </p>
+    <h4>The table shows the observations of an experiment involving heating of two substances. Which of the following is correct about the reactivity of the elements towards oxygen in ascending order?</h4>
+      <input type="radio" rel="21" value="a" name="grp21"/>a) Hydrogen, P, carbon, Q<br />
+      <input type="radio" rel="21" value="b" name="grp21"/>b) P, carbon, Q, hydrogen<br />
+      <input type="radio" rel="21" value="c" name="grp21"/>c) Carbon, P, hydrogen, Q<br />
+      <input type="radio" rel="21" value="d" name="grp21"/>d) Q, carbon, P, hydrogen<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            23) Which of the following acid releases the highest amount of heat when reacted with excess sodium hydroxide? 
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question23">a) 50 cm³ of 0.5 mol dm̄̄ˉ³ of ethanoic acid<br>
-            <input type="radio" value="b" name="question23">b) 50 cm³ of 0.5 mol dmˉ³ of sulphuric acid<br>
-            <input type="radio" value="c" name="question23">c) 50 cm³ of 0.5 mol dmˉ³ of hydrochloric acid<br>
-            <input type="radio" value="d" name="question23">d) 50 cm³ of 0.5 mol dmˉ³ of nitric acid<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>23) Which of the following acid releases the highest amount of heat when reacted with excess sodium hydroxide?</h4> 
+      <input type="radio" rel="22" value="a" name="grp22"/>a) 50 cm³ of 0.5 mol dm̄̄ˉ³ of ethanoic acid<br />
+      <input type="radio" rel="22" value="b" name="grp22"/>b) 50 cm³ of 0.5 mol dmˉ³ of sulphuric acid<br />
+      <input type="radio" rel="22" value="c" name="grp22"/>c) 50 cm³ of 0.5 mol dmˉ³ of hydrochloric acid<br />
+      <input type="radio" rel="22" value="d" name="grp22"/>d) 50 cm³ of 0.5 mol dmˉ³ of nitric acid<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            24) Sodium chloride is added to fish to produce salted fish. Which of the following is the main function of sodium chloride?
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question24">a) It gives a better taste<br>
-            <input type="radio" value="b" name="question24">b) Prevents oxidation so that it does not turn rancid<br>
-            <input type="radio" value="c" name="question24">c) It absorbs water in order to inhibit the growth of bacteria<br>
-            <input type="radio" value="d" name="question24">d) It improves the texture<br>
-          </div>
-          </p>
+    <div class="quizQ">
+    <h4>24) Sodium chloride is added to fish to produce salted fish. Which of the following is the main function of sodium chloride?</h4> 
+      <input type="radio" rel="23" value="a" name="grp23"/>a) It gives a better taste<br />
+      <input type="radio" rel="23" value="b" name="grp23"/>b) Prevents oxidation so that it does not turn rancid<br />
+      <input type="radio" rel="23" value="c" name="grp23"/>c) It absorbs water in order to inhibit the growth of bacteria<br />
+      <input type="radio" rel="23" value="d" name="grp23"/>d) It improves the texture<br />
 
-          <br>
+    </div>
 
-          <div class="qheader">
-            25) Which of the following are example of food preservative?<br>
-            <ol type = "i">
+    <div class="quizQ">
+    <h4>25) Which of the following are example of food preservative?</h4>
+      <ol type = "i">
               <li>Sodium nitrite</li>
               <li>Sodium citrate</li>
               <li>Sodium nitrate</li>
               <li>Sodium benzoate</li>
               <li>Sulphur dioxide</li>
-            </ol>
-          </div>
-          <p>
-          <div class="qselections">
-            <input type="radio" value="a" name="question25">a) i and iii only<br>
-            <input type="radio" value="b" name="question25">b) i,ii and iii only<br>
-            <input type="radio" value="c" name="question25">c) i,iii,iv and v only<br>
-            <input type="radio" value="d" name="question25">d) i,ii,iii,iv and v<br>
-          </div>
-          </p>
+            </ol> 
+      <input type="radio" rel="24" value="a" name="grp24"/>a) i and iii only<br />
+      <input type="radio" rel="24" value="b" name="grp24"/>b) i,ii and iii only<br />
+      <input type="radio" rel="24" value="c" name="grp24"/>c) i,iii,iv and v only<br />
+      <input type="radio" rel="24" value="d" name="grp24"/>d) i,ii,iii,iv and v<br />
+
+    </div>
+
+    <div style="padding:8px 2px;background:#ededed;">
+      <input type ="button" id="score" value="Score Quiz" />
+    </div>
+  </div>
+  
+    <br />
+    <p id="c">
+    ///Copyright (c) nobody 2010 -> until the sun burns the F**K out of us...<br />
+     ///Simple-Quiz-JS created by MENIME & oVTech   
+     </p>
+    <br /> <br />
+</div>
+</form>
 
 
-          </form>
-
-          <form>
-            <div align="center">
-              <input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
-          </form>
           <!-- END CONTENT HERE -->
         </div>
       </div>
