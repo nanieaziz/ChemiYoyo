@@ -85,3 +85,24 @@ img.image {
   text-align: center;
   
 }
+
+.quiz label {
+  display: block;
+  padding: 8px 5px
+}
+
+.quiz input[type="radio"] {
+  margin-right:10px;
+}
+
+.content-block, .list-block, .content-block-title {
+  margin-top:55px;
+}
+
+.quizQ label {
+  border-top:1px solid #ddd;
+}
+
+.quizQ label:last-child {
+  border-bottom:1px solid #ddd;
+}

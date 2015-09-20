@@ -1,9 +1,30 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Docs of Chemi - Quiz</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Top Navbar-->
 <div class="navbar">
   <div class="navbar-inner">
-    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="left"><a href="menu.html" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
     <div class="center sliding">Quiz</div>
     <div class="right">
       <!-- Right link contains only icon - additional "icon-only" class-->
@@ -20,27 +41,27 @@
         <div class="content-block-inner">
 
           <!-- FILL CONTENT HERE -->
-          <form name="myForm">
+          <form name="myForm" class="quiz">
 <div id="page">
-  <h3 id="h">Quiz Time!</h3>
+  
   
   <div id="q">
     <div class="quizQ">
     <h4>1) During a cleaning process, soap act as?</h4> 
-      <input type="radio" rel="0" value="a" name="grp0"/>a) Emulsifying agent<br /> <!--Correct Answer: A-->
-      <input type="radio" rel="0" value="b" name="grp0"/>b) Oxidising agent<br />
-      <input type="radio" rel="0" value="c" name="grp0"/>c) Cleaning agent<br />
-      <input type="radio" rel="0" value="d" name="grp0"/>d) Oil breaking agent<br />
+      <label><input type="radio" rel="0" value="a" name="grp0"/>a) Emulsifying agent</label> <!--Correct Answer: A-->
+      <label><input type="radio" rel="0" value="b" name="grp0"/>b) Oxidising agent</label>
+      <label><input type="radio" rel="0" value="c" name="grp0"/>c) Cleaning agent</label>
+      <label><input type="radio" rel="0" value="d" name="grp0"/>d) Oil breaking agent</label>
 
     </div>
 
 
     <div class="quizQ">
     <h4> 2) In the process of making soap, which of the following chemical is added into the product to reduce the solubility of the soap solution?</h4>  
-      <input type="radio" rel="1" value="a" name="grp1"/>a) Ammonium chloride<br />
-      <input type="radio" rel="1" value="b" name="grp1"/>b) Sodium chloride<br /> <!--Correct Answer: B-->
-      <input type="radio" rel="1" value="c" name="grp1"/>c) Potassium chloride<br />
-      <input type="radio" rel="1" value="d" name="grp1"/>d) Zinc chloride<br />
+      <label><input type="radio" rel="1" value="a" name="grp1"/>a) Ammonium chloride</label>
+      <label><input type="radio" rel="1" value="b" name="grp1"/>b) Sodium chloride <!--Correct Answer: B--></label>
+      <label><input type="radio" rel="1" value="c" name="grp1"/>c) Potassium chloride</label>
+      <label><input type="radio" rel="1" value="d" name="grp1"/>d) Zinc chloride</label>
     </div>
 
 
@@ -53,15 +74,15 @@
                 <li>Sodium bicarbonate</li>
             </ol>
 
-      <input type="radio" rel="2" value="a" name="grp2"/>a) i and iv only<br/>
-      <input type="radio" rel="2" value="b" name="grp2"/>b) i and ii only<br/>
-      <input type="radio" rel="2" value="c" name="grp2"/>c) iii and iv only<br/> <!--Correct Answer: C-->
-      <input type="radio" rel="2" value="d" name="grp2"/>d) ii and iv only<br/>
+      <label><input type="radio" rel="2" value="a" name="grp2"/>a) i and iv only</label>
+      <label><input type="radio" rel="2" value="b" name="grp2"/>b) i and ii only</label>
+      <label><input type="radio" rel="2" value="c" name="grp2"/>c) iii and iv only <!--Correct Answer: C--></label>
+      <label><input type="radio" rel="2" value="d" name="grp2"/>d) ii and iv only</label>
     </div>
 
     <div class="quizQ">
     <h4>4) Which of the following pairs is true about the additives in detergents and their function?<br></h4> 
-      <table border="1">
+      <table border="0">
               <tr>
                 <th></th>
                 <th>Additive</th>
@@ -89,128 +110,128 @@
               </tr>
               </table><br>
 
-      <input type="radio" rel="3" value="a" name="grp3"/>a) i and ii only<br />
-      <input type="radio" rel="3" value="b" name="grp3"/>b) i and iv only<br /> <!--Correct Answer: B-->
-      <input type="radio" rel="3" value="c" name="grp3"/>c) i,iii and iv only<br />
-      <input type="radio" rel="3" value="d" name="grp3"/>d) i,ii,iii and iv<br />
+      <label><input type="radio" rel="3" value="a" name="grp3"/>a) i and ii only</label>
+      <label><input type="radio" rel="3" value="b" name="grp3"/>b) i and iv only <!--Correct Answer: B--></label>
+      <label><input type="radio" rel="3" value="c" name="grp3"/>c) i,iii and iv only</label>
+      <label><input type="radio" rel="3" value="d" name="grp3"/>d) i,ii,iii and iv</label>
     </div>
 
     <div class="quizQ">
     <h4>5) Detergent is more effective in hard water compared to soap because detergent?</h4> 
-      <input type="radio" rel="4" value="a" name="grp4"/>a) Has hydrophilic part which is more soluble in water<br />
-      <input type="radio" rel="4" value="b" name="grp4"/>b) Has hydrophobic part which is more soluble in oil and grease<br />
-      <input type="radio" rel="4" value="c" name="grp4"/>c) Has smaller molecules which is more soluble in water<br />
-      <input type="radio" rel="4" value="d" name="grp4"/>d) Forms a soluble salt wit metal ion in hard water<br />
+      <label><input type="radio" rel="4" value="a" name="grp4"/>a) Has hydrophilic part which is more soluble in water</label>
+      <label><input type="radio" rel="4" value="b" name="grp4"/>b) Has hydrophobic part which is more soluble in oil and grease</label>
+      <label><input type="radio" rel="4" value="c" name="grp4"/>c) Has smaller molecules which is more soluble in water</label>
+      <label><input type="radio" rel="4" value="d" name="grp4"/>d) Forms a soluble salt wit metal ion in hard water</label>
 
     </div>
 
     <div class="quizQ">
     <h4>6) Which of the following take place when water solidifies to become ice?</h4> 
-      <input type="radio" rel="5" value="a" name="grp5"/>a) Water molecules get nearer to each other<br />
-      <input type="radio" rel="5" value="b" name="grp5"/>b) Water molecules are not arranged orderly<br />
-      <input type="radio" rel="5" value="c" name="grp5"/>c) The mass  increase<br />
-      <input type="radio" rel="5" value="d" name="grp5"/>d) Energy is absorbed from the surrounding<br />
+      <label><input type="radio" rel="5" value="a" name="grp5"/>a) Water molecules get nearer to each other</label>
+      <label><input type="radio" rel="5" value="b" name="grp5"/>b) Water molecules are not arranged orderly</label>
+      <label><input type="radio" rel="5" value="c" name="grp5"/>c) The mass  increase</label>
+      <label><input type="radio" rel="5" value="d" name="grp5"/>d) Energy is absorbed from the surrounding</label>
 
     </div>
 
     <div class="quizQ">
     <h4>7) In an atom , the number of electrons is equal to the </h4> 
-      <input type="radio" rel="6" value="a" name="grp6"/>a) Number of neutron<br />
-      <input type="radio" rel="6" value="b" name="grp6"/>b) Proton number<br />
-      <input type="radio" rel="6" value="c" name="grp6"/>c) Nucleon number<br />
-      <input type="radio" rel="6" value="d" name="grp6"/>d) Sum of the charge<br />
+      <label><input type="radio" rel="6" value="a" name="grp6"/>a) Number of neutron</label>
+      <label><input type="radio" rel="6" value="b" name="grp6"/>b) Proton number</label>
+      <label><input type="radio" rel="6" value="c" name="grp6"/>c) Nucleon number</label>
+      <label><input type="radio" rel="6" value="d" name="grp6"/>d) Sum of the charge</label>
 
     </div>
 
     <div class="quizQ">
     <h4>8) Which of the followings is the formula of calcium hydroxide ion?</h4> 
-      <input type="radio" rel="7" value="a" name="grp7"/>a) Ca2OH<br />
-      <input type="radio" rel="7" value="b" name="grp7"/>b) Ca(OH)2<br />
-      <input type="radio" rel="7" value="c" name="grp7"/>c) CAOH<br />
-      <input type="radio" rel="7" value="d" name="grp7"/>d) CAOH2<br />
+      <label><input type="radio" rel="7" value="a" name="grp7"/>a) Ca2OH</label>
+      <label><input type="radio" rel="7" value="b" name="grp7"/>b) Ca(OH)2</label>
+      <label><input type="radio" rel="7" value="c" name="grp7"/>c) CAOH</label>
+      <label><input type="radio" rel="7" value="d" name="grp7"/>d) CAOH2</label>
 
     </div>
 
     <div class="quizQ">
     <h4>9) The mass of an atom of element A is twice of the mass of an atom of carbon. Therefore, its relative atomic mass is ___ . [Relative Atomic Mass of Carbon = 12] </h4> 
-      <input type="radio" rel="8" value="a" name="grp8"/>a) 12<br />
-      <input type="radio" rel="8" value="b" name="grp8"/>b) 6<br />
-      <input type="radio" rel="8" value="c" name="grp8"/>c) 24<br />
-      <input type="radio" rel="8" value="d" name="grp8"/>d) 18<br />
+      <label><input type="radio" rel="8" value="a" name="grp8"/>a) 12</label>
+      <label><input type="radio" rel="8" value="b" name="grp8"/>b) 6</label>
+      <label><input type="radio" rel="8" value="c" name="grp8"/>c) 24</label>
+      <label><input type="radio" rel="8" value="d" name="grp8"/>d) 18</label>
 
     </div>
 
     <div class="quizQ">
     <h4>10) The maximum number of electrons can be filled into the second shell of an atom is __.</h4> 
-      <input type="radio" rel="9" value="a" name="grp9"/>a) 8<br />
-      <input type="radio" rel="9" value="b" name="grp9"/>b) 6<br />
-      <input type="radio" rel="9" value="c" name="grp9"/>c) 2<br />
-      <input type="radio" rel="9" value="d" name="grp9"/>d) 4<br />
-      <input type="radio" rel="9" value="e" name="grp9"/>e) 18<br />
+      <label><input type="radio" rel="9" value="a" name="grp9"/>a) 8</label>
+      <label><input type="radio" rel="9" value="b" name="grp9"/>b) 6</label>
+      <label><input type="radio" rel="9" value="c" name="grp9"/>c) 2</label>
+      <label><input type="radio" rel="9" value="d" name="grp9"/>d) 4</label>
+      <label><input type="radio" rel="9" value="e" name="grp9"/>e) 18</label>
 
     </div>
     
     <div class="quizQ">
     <h4>11) What is the relative molecular mass of Carbon Hydroxide (Ca(OH)2)? (Ar: O = 16, H = 1 ; Ca = 40)</h4> 
-      <input type="radio" rel="10" value="a" name="grp10"/>a) 54<br />
-      <input type="radio" rel="10" value="b" name="grp10"/>b) 74<br />
-      <input type="radio" rel="10" value="c" name="grp10"/>c) 57<br />
-      <input type="radio" rel="10" value="d" name="grp10"/>d) 58<br />
+      <label><input type="radio" rel="10" value="a" name="grp10"/>a) 54</label>
+      <label><input type="radio" rel="10" value="b" name="grp10"/>b) 74</label>
+      <label><input type="radio" rel="10" value="c" name="grp10"/>c) 57</label>
+      <label><input type="radio" rel="10" value="d" name="grp10"/>d) 58</label>
 
     </div>
 
     <div class="quizQ">
     <h4>12) The noble gases exist as monoatomic gases in nature because?</h4> 
-      <input type="radio" rel="11" value="a" name="grp11"/>a) They are insoluble in water<br />
-      <input type="radio" rel="11" value="b" name="grp11"/>b) They have valence electrons with very low energy<br />
-      <input type="radio" rel="11" value="c" name="grp11"/>c) They have 2 or 8 electrons which is very stable<br />
-      <input type="radio" rel="11" value="d" name="grp11"/>d) They have duplet or octet electrons arrangement which is very stable<br />
+      <label><input type="radio" rel="11" value="a" name="grp11"/>a) They are insoluble in water</label>
+      <label><input type="radio" rel="11" value="b" name="grp11"/>b) They have valence electrons with very low energy</label>
+      <label><input type="radio" rel="11" value="c" name="grp11"/>c) They have 2 or 8 electrons which is very stable</label>
+      <label><input type="radio" rel="11" value="d" name="grp11"/>d) They have duplet or octet electrons arrangement which is very stable</label>
 
     </div>
 
     <div class="quizQ">
     <h4>13) P, Q and R are 3 consecutive elements in periodic table. If R is a noble gas, what will be the charge of ion P?</h4> 
-      <input type="radio" rel="12" value="a" name="grp12"/>a) -2<br />
-      <input type="radio" rel="12" value="b" name="grp12"/>b) +1<br />
-      <input type="radio" rel="12" value="c" name="grp12"/>c) +2<br />
-      <input type="radio" rel="12" value="d" name="grp12"/>d) 0<br />
-      <input type="radio" rel="12" value="e" name="grp12"/>d) -1<br />
+      <label><input type="radio" rel="12" value="a" name="grp12"/>a) -2</label>
+      <label><input type="radio" rel="12" value="b" name="grp12"/>b) +1</label>
+      <label><input type="radio" rel="12" value="c" name="grp12"/>c) +2</label>
+      <label><input type="radio" rel="12" value="d" name="grp12"/>d) 0</label>
+      <label><input type="radio" rel="12" value="e" name="grp12"/>d) -1</label>
 
     </div>
 
     <div class="quizQ">
     <h4>14) Elements in Periodic Table are arranged according to the increase in their</h4> 
-      <input type="radio" rel="13" value="a" name="grp13"/>a) nucleon number<br />
-      <input type="radio" rel="13" value="b" name="grp13"/>b) proton number<br />
-      <input type="radio" rel="13" value="c" name="grp13"/>c) number of neutrons<br />
-      <input type="radio" rel="13" value="d" name="grp13"/>d) relative atomic mass<br />
+      <label><input type="radio" rel="13" value="a" name="grp13"/>a) nucleon number</label>
+      <label><input type="radio" rel="13" value="b" name="grp13"/>b) proton number</label>
+      <label><input type="radio" rel="13" value="c" name="grp13"/>c) number of neutrons</label>
+      <label><input type="radio" rel="13" value="d" name="grp13"/>d) relative atomic mass</label>
 
     </div>
 
     <div class="quizQ">
     <h4>15) Which of the following is TRUE about the metal oxide formed between group 1 Metal and oxygen?</h4> 
-      <input type="radio" rel="14" value="a" name="grp14"/>a) It has a low boiling point.<br />
-      <input type="radio" rel="14" value="b" name="grp14"/>b) It can conduct electricity when in solid state.<br />
-      <input type="radio" rel="14" value="c" name="grp14"/>c) It is solid of different colour.<br />
-      <input type="radio" rel="14" value="d" name="grp14"/>d) It is soluble in waterq<br />
+      <label><input type="radio" rel="14" value="a" name="grp14"/>a) It has a low boiling point.</label>
+      <label><input type="radio" rel="14" value="b" name="grp14"/>b) It can conduct electricity when in solid state.</label>
+      <label><input type="radio" rel="14" value="c" name="grp14"/>c) It is solid of different colour.</label>
+      <label><input type="radio" rel="14" value="d" name="grp14"/>d) It is soluble in waterq</label>
 
     </div>
 
     <div class="quizQ">
     <h4>16) Which of the following acids contains greatest number of hydrogen ions?</h4> 
-      <input type="radio" rel="15" value="a" name="grp15"/>a) 100 cm³ of 1 mol/dm³ phosphoric acid<br />
-      <input type="radio" rel="15" value="b" name="grp15"/>b) 200 cm³ of 1 mol/dm³ hydrochloric acid<br />
-      <input type="radio" rel="15" value="c" name="grp15"/>c) 150 cm³ of 1 mol/dm³ sulphuric acid<br />
-      <input type="radio" rel="15" value="d" name="grp15"/>d) 300 cm³ of 1 mol/dm³ etahnoic acid<br />
+      <label><input type="radio" rel="15" value="a" name="grp15"/>a) 100 cm³ of 1 mol/dm³ phosphoric acid</label>
+      <label><input type="radio" rel="15" value="b" name="grp15"/>b) 200 cm³ of 1 mol/dm³ hydrochloric acid</label>
+      <label><input type="radio" rel="15" value="c" name="grp15"/>c) 150 cm³ of 1 mol/dm³ sulphuric acid</label>
+      <label><input type="radio" rel="15" value="d" name="grp15"/>d) 300 cm³ of 1 mol/dm³ etahnoic acid</label>
 
     </div>
 
     <div class="quizQ">
     <h4>17) A salt always</h4> 
-      <input type="radio" rel="16" value="a" name="grp16"/>a) conducts electricity<br />
-      <input type="radio" rel="16" value="b" name="grp16"/>b) dissolves in water<br />
-      <input type="radio" rel="16" value="c" name="grp16"/>c) contain positive and negative ions<br />
-      <input type="radio" rel="16" value="d" name="grp16"/>d) has salty taste<br />
+      <label><input type="radio" rel="16" value="a" name="grp16"/>a) conducts electricity</label>
+      <label><input type="radio" rel="16" value="b" name="grp16"/>b) dissolves in water</label>
+      <label><input type="radio" rel="16" value="c" name="grp16"/>c) contain positive and negative ions</label>
+      <label><input type="radio" rel="16" value="d" name="grp16"/>d) has salty taste</label>
 
     </div>
 
@@ -223,19 +244,19 @@
               <li>Silver(I) nitrate</li>
               <li>Copper(II) sulphate</li>
             </ol>
-      <input type="radio" rel="17" value="a" name="grp17"/>a) i and ii only<br />
-      <input type="radio" rel="17" value="b" name="grp17"/>b) ii and iv only<br />
-      <input type="radio" rel="17" value="c" name="grp17"/>c) i, iii and v only<br />
-      <input type="radio" rel="17" value="d" name="grp17"/>d) iv and v only<br />
+      <label><input type="radio" rel="17" value="a" name="grp17"/>a) i and ii only</label>
+      <label><input type="radio" rel="17" value="b" name="grp17"/>b) ii and iv only</label>
+      <label><input type="radio" rel="17" value="c" name="grp17"/>c) i, iii and v only</label>
+      <label><input type="radio" rel="17" value="d" name="grp17"/>d) iv and v only</label>
 
     </div>
 
     <div class="quizQ">
     <h4>19) Sulphuric acid is manufactured in industry through a processed called</h4> 
-      <input type="radio" rel="18" value="a" name="grp18"/>a) Haber Process<br />
-      <input type="radio" rel="18" value="b" name="grp18"/>b) Acid making process<br />
-      <input type="radio" rel="18" value="c" name="grp18"/>c) Contact Process<br />
-      <input type="radio" rel="18" value="d" name="grp18"/>d) Ostwald Process<br />
+      <label><input type="radio" rel="18" value="a" name="grp18"/>a) Haber Process</label>
+      <label><input type="radio" rel="18" value="b" name="grp18"/>b) Acid making process</label>
+      <label><input type="radio" rel="18" value="c" name="grp18"/>c) Contact Process</label>
+      <label><input type="radio" rel="18" value="d" name="grp18"/>d) Ostwald Process</label>
 
     </div>
 
@@ -248,19 +269,19 @@
               <li>Hydrocarbon that burns with more soot contains a higher percentage of carbon.</li>
               <li>The more carbon atoms in a molecule of a hydrocarbon, the lower the boiling point of the hydrocarbon.</li>
             </ol> 
-      <input type="radio" rel="19" value="a" name="grp19"/>a) i and iii only<br />
-      <input type="radio" rel="19" value="b" name="grp19"/>b) i,ii and iii only<br />
-      <input type="radio" rel="19" value="c" name="grp19"/>c) i,ii and iv only<br />
-      <input type="radio" rel="19" value="d" name="grp19"/>d) i,ii,iii,iv and v<br />
+      <label><input type="radio" rel="19" value="a" name="grp19"/>a) i and iii only</label>
+      <label><input type="radio" rel="19" value="b" name="grp19"/>b) i,ii and iii only</label>
+      <label><input type="radio" rel="19" value="c" name="grp19"/>c) i,ii and iv only</label>
+      <label><input type="radio" rel="19" value="d" name="grp19"/>d) i,ii,iii,iv and v</label>
 
     </div>
 
     <div class="quizQ">
     <h4>21) The amount of soot produced during combustion of a hydrocarbon depends on</h4>
-      <input type="radio" rel="20" value="a" name="grp20"/>a) The types of hydrocarbon<br />
-      <input type="radio" rel="20" value="b" name="grp20"/>b) The number of carbon atoms in the molecule of the hydrocarbon<br />
-      <input type="radio" rel="20" value="c" name="grp20"/>c) The mass percentage of carbon in the hydrocarbon<br />
-      <input type="radio" rel="20" value="d" name="grp20"/>d) The density of the hydrocarbon<br />
+      <label><input type="radio" rel="20" value="a" name="grp20"/>a) The types of hydrocarbon</label>
+      <label><input type="radio" rel="20" value="b" name="grp20"/>b) The number of carbon atoms in the molecule of the hydrocarbon</label>
+      <label><input type="radio" rel="20" value="c" name="grp20"/>c) The mass percentage of carbon in the hydrocarbon</label>
+      <label><input type="radio" rel="20" value="d" name="grp20"/>d) The density of the hydrocarbon</label>
 
     </div>
 
@@ -285,28 +306,28 @@
                 </tr>
                 </table> </center>
     <h4>The table shows the observations of an experiment involving heating of two substances. Which of the following is correct about the reactivity of the elements towards oxygen in ascending order?</h4>
-      <input type="radio" rel="21" value="a" name="grp21"/>a) Hydrogen, P, carbon, Q<br />
-      <input type="radio" rel="21" value="b" name="grp21"/>b) P, carbon, Q, hydrogen<br />
-      <input type="radio" rel="21" value="c" name="grp21"/>c) Carbon, P, hydrogen, Q<br />
-      <input type="radio" rel="21" value="d" name="grp21"/>d) Q, carbon, P, hydrogen<br />
+      <label><input type="radio" rel="21" value="a" name="grp21"/>a) Hydrogen, P, carbon, Q</label>
+      <label><input type="radio" rel="21" value="b" name="grp21"/>b) P, carbon, Q, hydrogen</label>
+      <label><input type="radio" rel="21" value="c" name="grp21"/>c) Carbon, P, hydrogen, Q</label>
+      <label><input type="radio" rel="21" value="d" name="grp21"/>d) Q, carbon, P, hydrogen</label>
 
     </div>
 
     <div class="quizQ">
     <h4>23) Which of the following acid releases the highest amount of heat when reacted with excess sodium hydroxide?</h4> 
-      <input type="radio" rel="22" value="a" name="grp22"/>a) 50 cm³ of 0.5 mol dm̄̄ˉ³ of ethanoic acid<br />
-      <input type="radio" rel="22" value="b" name="grp22"/>b) 50 cm³ of 0.5 mol dmˉ³ of sulphuric acid<br />
-      <input type="radio" rel="22" value="c" name="grp22"/>c) 50 cm³ of 0.5 mol dmˉ³ of hydrochloric acid<br />
-      <input type="radio" rel="22" value="d" name="grp22"/>d) 50 cm³ of 0.5 mol dmˉ³ of nitric acid<br />
+      <label><input type="radio" rel="22" value="a" name="grp22"/>a) 50 cm³ of 0.5 mol dm̄̄ˉ³ of ethanoic acid</label>
+      <label><input type="radio" rel="22" value="b" name="grp22"/>b) 50 cm³ of 0.5 mol dmˉ³ of sulphuric acid</label>
+      <label><input type="radio" rel="22" value="c" name="grp22"/>c) 50 cm³ of 0.5 mol dmˉ³ of hydrochloric acid</label>
+      <label><input type="radio" rel="22" value="d" name="grp22"/>d) 50 cm³ of 0.5 mol dmˉ³ of nitric acid</label>
 
     </div>
 
     <div class="quizQ">
     <h4>24) Sodium chloride is added to fish to produce salted fish. Which of the following is the main function of sodium chloride?</h4> 
-      <input type="radio" rel="23" value="a" name="grp23"/>a) It gives a better taste<br />
-      <input type="radio" rel="23" value="b" name="grp23"/>b) Prevents oxidation so that it does not turn rancid<br />
-      <input type="radio" rel="23" value="c" name="grp23"/>c) It absorbs water in order to inhibit the growth of bacteria<br />
-      <input type="radio" rel="23" value="d" name="grp23"/>d) It improves the texture<br />
+      <label><input type="radio" rel="23" value="a" name="grp23"/>a) It gives a better taste</label>
+      <label><input type="radio" rel="23" value="b" name="grp23"/>b) Prevents oxidation so that it does not turn rancid</label>
+      <label><input type="radio" rel="23" value="c" name="grp23"/>c) It absorbs water in order to inhibit the growth of bacteria</label>
+      <label><input type="radio" rel="23" value="d" name="grp23"/>d) It improves the texture</label>
 
     </div>
 
@@ -319,24 +340,17 @@
               <li>Sodium benzoate</li>
               <li>Sulphur dioxide</li>
             </ol> 
-      <input type="radio" rel="24" value="a" name="grp24"/>a) i and iii only<br />
-      <input type="radio" rel="24" value="b" name="grp24"/>b) i,ii and iii only<br />
-      <input type="radio" rel="24" value="c" name="grp24"/>c) i,iii,iv and v only<br />
-      <input type="radio" rel="24" value="d" name="grp24"/>d) i,ii,iii,iv and v<br />
+      <label><input type="radio" rel="24" value="a" name="grp24"/>a) i and iii only</label>
+      <label><input type="radio" rel="24" value="b" name="grp24"/>b) i,ii and iii only</label>
+      <label><input type="radio" rel="24" value="c" name="grp24"/>c) i,iii,iv and v only</label>
+      <label><input type="radio" rel="24" value="d" name="grp24"/>d) i,ii,iii,iv and v</label>
 
     </div>
 
-    <div style="padding:8px 2px;background:#ededed;">
-      <input type ="button" id="score" value="Score Quiz" />
-    </div>
+    
+      <input type ="button" id="score" value="Score Quiz" class="button button-big button-fill" />
+    
   </div>
-  
-    <br />
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/Chemi
-    <br /> <br />
 </div>
 </form>
 
@@ -347,3 +361,8 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="js/quiz.js"></script>
+</div>
+    </div>
+  </body>
+</html>

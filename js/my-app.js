@@ -550,6 +550,8 @@ var myff5 = myApp.photoBrowser({
         zoom: 'true'
 });
 
+$('.page-content').scrollTop(0)
+
 myApp.onPageInit('menu', function (page) {
     $$('.pb-ptable').on('click', function () {
     myPtable.open();
@@ -563,3 +565,23 @@ var myPtable = myApp.photoBrowser({
         ],
         zoom: 'true'
 });
+
+myApp.onPageInit('paper2', function (page) {
+    fw7App.upscroller('Go up'); // You can define the label of the button here
+})
+
+var upscroller = fw7App.upscroller('Go up')
+
+var $scroller = $(".page-content");
+$scroller.bind('touchstart', function (ev) {
+  var $this = $(this);
+  var scroller = $scroller.get(0);
+
+  if ($this.scrollTop() === 0) $this.scrollTop(1);
+  var scrollTop = scroller.scrollTop;
+  var scrollHeight = scroller.scrollHeight;
+  var offsetHeight = scroller.offsetHeight;
+  var contentHeight = scrollHeight - offsetHeight;
+  if (contentHeight == scrollTop) $this.scrollTop(scrollTop-1);
+});
+
